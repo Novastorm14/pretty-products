@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  border: 3px solid #6f00e7;
+  border-radius: 6px;
+  padding: .5rem;
+}
+
+li img {
+  width: 15rem;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #6f00e7;
+  font-weight: bold;
+}
