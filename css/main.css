@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: karma, serif;
   line-height: 1.5;
 }
 
@@ -10,7 +10,12 @@ html {
   box-sizing: inherit;
 }
 
-ol {
+body, main {
+  margin: 0;
+  padding: 0;
+}
+
+main ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
@@ -18,22 +23,28 @@ ol {
   padding: 0;
 }
 
-li {
+main li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: #fff;
-  border: 3px solid #6f00e7;
+  border: 3px solid ##987ffa;
   border-radius: 6px;
   padding: .5rem;
 }
 
-li img {
-  width: 15rem;
+main div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li > img {
+  max-width: 15rem;
 }
 
 h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald, sans-serif;
   color: #6f00e7;
   font-weight: bold;
 }
