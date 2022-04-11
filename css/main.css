@@ -1,12 +1,10 @@
 html {
   box-sizing: border-box;
-  font-family: karma, serif;
+  font-family: Karma, serif;
   line-height: 1.5;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -20,17 +18,16 @@ main ol {
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   list-style: none;
-  padding: 0;
+  margin: 0;
+  padding: 1rem;
 }
 
 main li {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  text-align: center;
   background-color: #fff;
-  border: 3px solid ##987ffa;
+  border: 3px solid #987ffa;
   border-radius: 6px;
-  padding: .5rem;
+  padding: 1rem;
 }
 
 main div {
@@ -39,12 +36,38 @@ main div {
   justify-content: space-between;
 }
 
+div > a {
+  display: flex;
+  background-color: #6f00e7;
+  border-radius: 3em;
+  padding: .5em 1.5em .7em;
+}
+
+div p {
+  font-family: Oswald, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0 0 1.5rem;
+  padding: 0;
+}
+
 li > img {
   max-width: 15rem;
+  align-items: center;
+}
+
+li > p {
+  font-family: Karma, serif;
+  font-size: 1.4rem;
+  margin: .25rem;
 }
 
 h2 {
   font-family: Oswald, sans-serif;
   color: #6f00e7;
   font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  padding: .25rem;
 }
